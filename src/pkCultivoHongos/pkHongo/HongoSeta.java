@@ -1,4 +1,4 @@
-package entidades;
+package pkCultivoHongos.pkHongo;
 
 public class HongoSeta extends Fungi {
     private double tamanoSombrero;

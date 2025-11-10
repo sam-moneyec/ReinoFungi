@@ -1,4 +1,4 @@
-package entidades;
+package pkCultivoHongos.pkHongo;
 
 public class Levadura extends Fungi {
     private String tipoFermentacion;
