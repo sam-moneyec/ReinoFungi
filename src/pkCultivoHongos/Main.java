@@ -1,4 +1,5 @@
 package pkCultivoHongos;
+
 import pkCultivoHongos.pkHumano.*;
 import pkCultivoHongos.pkSerVivo.*;
 import pkCultivoHongos.pkBioma.*;
@@ -40,7 +41,10 @@ public class Main {
         micologo.estudiarHongo(moho);
         micologo.explicarAlJardinero(jardinero, moho);
 
+        // R06 - Micólogo describe el bioma del hongo según el terreno
+        micologo.describirBioma(moho, terreno);
+
         // Fin del programa
-        System.out.println("\n Fin de la simulación del Reino Fungi 🌱");
+        System.out.println("\nFin de la simulación del Reino Fungi");
     }
 }

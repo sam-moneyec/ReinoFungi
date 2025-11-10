@@ -14,9 +14,26 @@ public class Terreno {
     }
 
     public void mostrarInfo() {
-        System.out.println(" Terreno tipo: " + tipoSuelo + 
-                           " | Temp: " + temperatura + "°C" + 
-                           " | Luz: " + luz + 
+        System.out.println(" Terreno tipo: " + tipoSuelo +
+                           " | Temp: " + temperatura + "°C" +
+                           " | Luz: " + luz +
                            " | Fertilidad: " + fertilidad + "/5");
+    }
+
+    // Getters
+    public String getTipoSuelo() {
+        return tipoSuelo;
+    }
+
+    public double getTemperatura() {
+        return temperatura;
+    }
+
+    public String getLuz() {
+        return luz;
+    }
+
+    public int getFertilidad() {
+        return fertilidad;
     }
 }
