@@ -1,7 +1,8 @@
 package pkCultivoHongos;
 
-import pkCultivoHongos.pkHumano.*;
 import pkCultivoHongos.pkHongo.*;
+import pkCultivoHongos.pkHumano.*;
+import pkCultivoHongos.pkBioma.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,47 +13,35 @@ public class Main {
         System.out.println("      Integrantes: Robayo Morcillo Samuel Esteban, Mao Tsetung Rosero Duran, Ariel Alejandro Soria Yánez");
         System.out.println("==========================================\n\n");
 
-        // Crear personajes
-        Jardinero jardinero = new Jardinero("Carlos", "efectivo");
-        Micologo micologo = new Micologo("Dra. Valeria", 1234, "Micología aplicada");
+        // R01 - Crear un Terreno
+        Terreno terreno = new Terreno("Húmedo", 22.5, "Sombra parcial", 3);
+        terreno.mostrarInfo();
 
-        // Crear hongos
-        HongoSeta seta = new HongoSeta("Agaricus bisporus", "sexual", "bosque húmedo", false, 5.5, "blanco");
-        Moho moho = new Moho("Penicillium chrysogenum", "asexual", "materia orgánica", false, "verde", "algodonosa");
-        Levadura levadura = new Levadura("Saccharomyces cerevisiae", "asexual", "ambiente húmedo", false, "alcohólica", true);
+        // R02 - Crear un Micólogo
+        Micologo micologo = new Micologo("Dr. Fernández", 101, "Micorrizas");
+        micologo.mostrarInfo();
 
-        // R01
-        System.out.println("\n R01: El jardinero entrega el hongo al micólogo");
-        jardinero.entregarHongo(seta);
+        // R03 - Crear diferentes hongos
+        Moho moho = new Moho("Aspergillus niger", "Asexual", "Suelo húmedo", true, "Negro", "Algodonosa");
+        Levadura levadura = new Levadura("Saccharomyces cerevisiae", "Asexual", "Ambientes azucarados", false, "alcohólica", true);
+        HongoSeta seta = new HongoSeta("Agaricus bisporus", "Sexual", "Bosques templados", false, 7.5, "blanca");
 
-        // R02
-        System.out.println("\n R02: El micólogo estudia el hongo");
-        micologo.estudiarHongo(seta);
-
-        // R03
-        System.out.println("\n R03: El micólogo explica la información al jardinero");
-        micologo.explicarAlJardinero(jardinero, seta);
-
-        // R04
-        System.out.println("\n R04: El jardinero paga por la información");
-        jardinero.pagarInformacion(micologo, "transferencia");
-
-        // R05
-        System.out.println("\n R05: El jardinero cultiva el hongo");
-        jardinero.cultivarHongo(seta);
-
-        // Acciones adicionales
-        System.out.println("\n Acciones adicionales:");
-        moho.descomponer();
-        levadura.fermentar();
-
-        System.out.println("\n Información de los hongos:");
-        seta.mostrarInfo();
+        // Mostrar información de los hongos
         moho.mostrarInfo();
         levadura.mostrarInfo();
+        seta.mostrarInfo();
 
-        System.out.println("\n==========================================");
-        System.out.println("     FIN DE LA SIMULACIÓN DEL PROYECTO");
-        System.out.println("==========================================");
+        // R04 - Crear una planta asociada al moho
+        PlantaAsociada plantaAsociada = new PlantaAsociada("Orquídea", moho, "Simbiótica", true);
+        plantaAsociada.mostrarInteraccion();
+        plantaAsociada.aplicarEfecto();
+
+        // R05 - Micólogo estudia el hongo y explica al jardinero
+        Jardinero jardinero = new Jardinero(); // Jardinero sin interacción por teclado (modo automático)
+        micologo.estudiarHongo(moho);
+        micologo.explicarAlJardinero(jardinero, moho);
+
+        // Fin del programa
+        System.out.println("\n Fin de la simulación del Reino Fungi 🌱");
     }
 }
