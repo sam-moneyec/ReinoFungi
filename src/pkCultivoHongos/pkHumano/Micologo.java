@@ -16,7 +16,7 @@ public class Micologo {
 
     // Método R02: Estudiar hongo
     public void estudiarHongo(Fungi hongo) {
-        System.out.println("🔬 El micólogo " + nombre + " está estudiando el hongo: " + hongo.getNombreCientifico());
+        System.out.println(" El micólogo " + nombre + " está estudiando el hongo: " + hongo.getNombreCientifico());
         
         // Simulamos análisis según toxicidad
         if (hongo.isEsToxico()) {
@@ -28,7 +28,7 @@ public class Micologo {
 
     // Método R03: Explicar información al jardinero
     public void explicarAlJardinero(Jardinero jardinero, Fungi hongo) {
-        System.out.println("\n👨‍🔬 El micólogo " + nombre + " explica al jardinero " + jardinero.getNombre() + ":");
+        System.out.println("\n El micólogo " + nombre + " explica al jardinero " + jardinero.getNombre() + ":");
         System.out.println("El hongo " + hongo.getNombreCientifico() + " pertenece al hábitat " + hongo.getHabitat());
         if (hongo.isEsToxico()) {
             System.out.println(" Este hongo NO es apto para el consumo humano.");
