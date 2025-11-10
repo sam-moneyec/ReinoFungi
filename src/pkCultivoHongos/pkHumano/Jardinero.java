@@ -7,7 +7,7 @@ public class Jardinero {
 
     // 🔹 Constructor vacío (necesario para usarlo desde Main)
     public Jardinero() {
-        this.nombre = "Jardinero desconocido";
+        this.nombre = "Juan";
     }
 
     // 🔹 Constructor con nombre (opcional, por si quieres personalizarlo)

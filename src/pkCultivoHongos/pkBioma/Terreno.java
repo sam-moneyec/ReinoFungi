@@ -14,7 +14,7 @@ public class Terreno {
     }
 
     public void mostrarInfo() {
-        System.out.println(" Terreno tipo: " + tipoSuelo +
+        System.out.println("Terreno tipo: " + tipoSuelo +
                            " | Temp: " + temperatura + "°C" +
                            " | Luz: " + luz +
                            " | Fertilidad: " + fertilidad + "/5");

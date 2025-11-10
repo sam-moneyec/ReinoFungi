@@ -23,18 +23,18 @@ public class PlantaAsociada {
         System.out.println("Tipo de relación: " + tipoRelacion);
 
         if (mejoraCrecimiento) {
-            System.out.println(" Esta asociación mejora el crecimiento de la planta.");
+            System.out.println("Esta asociación mejora el crecimiento de la planta.");
         } else {
-            System.out.println(" Esta asociación puede afectar negativamente a la planta.");
+            System.out.println("Esta asociación puede afectar negativamente a la planta.");
         }
     }
 
     // Método adicional para simular el efecto del hongo sobre la planta
     public void aplicarEfecto() {
         if (mejoraCrecimiento) {
-            System.out.println(" La planta " + nombrePlanta + " crece más rápido gracias al hongo.");
+            System.out.println("La planta " + nombrePlanta + " crece más rápido gracias al hongo.");
         } else {
-            System.out.println(" La planta " + nombrePlanta + " muestra signos de debilitamiento.");
+            System.out.println("La planta " + nombrePlanta + " muestra signos de debilitamiento.");
         }
     }
 
