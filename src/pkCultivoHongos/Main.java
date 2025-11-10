@@ -22,29 +22,29 @@ public class Main {
         micologo.mostrarInfo();
 
         // R03 - Crear diferentes hongos
-        FungiComestible moho = new FungiComestible("Aspergillus niger", "Asexual", "Suelo húmedo", true, "Negro", "Algodonosa");
+        FungiComestible ChampinionComun = new FungiComestible("Aspergillus niger", "Asexual", "Suelo húmedo", true, "Negro", "Algodonosa");
         FungiFernmentador levadura = new FungiFernmentador("Saccharomyces cerevisiae", "Asexual", "Ambientes azucarados", false, "alcohólica", true);
-        FungiMedicinal seta = new FungiMedicinal("Agaricus bisporus", "Sexual", "Bosques templados", false, 7.5, "blanca");
+        FungiMedicinal Penicillium = new FungiMedicinal("Agaricus bisporus", "Sexual", "Bosques templados", false, 7.5, "blanca");
 
         // Mostrar información de los hongos
-        moho.mostrarInfo();
+        ChampinionComun.mostrarInfo();
         levadura.mostrarInfo();
-        seta.mostrarInfo();
+        Penicillium.mostrarInfo();
 
         // R04 - Crear una planta asociada al moho
-        PlantaAsociada plantaAsociada = new PlantaAsociada("Orquídea", moho, "Simbiótica", true);
+        PlantaAsociada plantaAsociada = new PlantaAsociada("Orquídea", ChampinionComun, "Simbiótica", true);
         plantaAsociada.mostrarInteraccion();
         plantaAsociada.aplicarEfecto();
 
         // R05 - Micólogo estudia el hongo y explica al jardinero
         Jardinero jardinero = new Jardinero(); // Jardinero sin interacción por teclado (modo automático)
-        micologo.estudiarHongo(moho);
-        micologo.explicarAlJardinero(jardinero, moho);
+        micologo.estudiarHongo(ChampinionComun);
+        micologo.explicarAlJardinero(jardinero, ChampinionComun);
 
         // R06 - Micólogo describe el bioma del hongo según el terreno
-        micologo.describirBioma(moho, terreno);
-
+        micologo.describirBioma(ChampinionComun, terreno);
         // Fin del programa
-        System.out.println("\nFin de la simulación del Reino Fungi");
+        System.out.println("\n----------------------------");
+        System.out.println("\nFin de la simulación");
     }
 }

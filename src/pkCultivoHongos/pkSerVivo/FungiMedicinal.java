@@ -1,12 +1,12 @@
 package pkCultivoHongos.pkSerVivo;
 
 public class FungiMedicinal extends Hongo {
-    private double tamanoSombrero;
+    private double tamano;
     private String color;
 
-    public FungiMedicinal(String nombreCientifico, String tipoReproduccion, String habitat, boolean esToxico, double tamanoSombrero, String color) {
+    public FungiMedicinal(String nombreCientifico, String tipoReproduccion, String habitat, boolean esToxico, double tamano, String color) {
         super(nombreCientifico, tipoReproduccion, habitat, esToxico);
-        this.tamanoSombrero = tamanoSombrero;
+        this.tamano = tamano;
         this.color = color;
     }
 
@@ -16,6 +16,9 @@ public class FungiMedicinal extends Hongo {
 
     @Override
     public void mostrarInfo() {
-        System.out.println("Hongo Seta: " + nombreCientifico + " (" + color + "), sombrero de " + tamanoSombrero + " cm.");
+        System.out.println("Hongo Seta: " + nombreCientifico + " (" + color + "), sombrero de " + tamano+ " cm.");
+    }
+    public void examinarPropiedadesMedicinales() {
+        System.out.println(nombreCientifico + " tiene propiedades medicinales beneficiosas para la salud.");
     }
 }
