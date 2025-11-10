@@ -10,7 +10,7 @@ public class Main {
         System.out.println("==========================================");
         System.out.println("      Escuela Politécnica Nacional");
         System.out.println("      Proyecto: Reino hongos");
-        System.out.println("      Integrantes: Robayo Morcillo Samuel Esteban, Mao Tsetung Rosero Duran, Ariel Alejandro Soria Yánez");
+        System.out.println("      Integrantes: \n     Robayo Morcillo Samuel Esteban,\n     Mao Tsetung Rosero Duran,\n     Ariel Alejandro Soria Yánez");
         System.out.println("==========================================\n\n");
 
         // R01 - Crear un Terreno
