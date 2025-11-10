@@ -9,10 +9,7 @@ public class Main {
         System.out.println("==========================================");
         System.out.println("      Escuela Politécnica Nacional");
         System.out.println("      Proyecto: Reino hongos");
-        System.out.println("      Grupo: 4");
-        System.out.println("      Integrantes:");
-        System.out.println("      - Jhoan Patricio Sasnalema De La Cruz");
-        System.out.println("      - Mao Rosero");
+        System.out.println("      Integrantes: Robayo Morcillo Samuel Esteban, Mao Tsetung Rosero Duran, Ariel Alejandro Soria Yánez");
         System.out.println("==========================================\n\n");
 
         // Crear personajes
@@ -25,31 +22,31 @@ public class Main {
         Levadura levadura = new Levadura("Saccharomyces cerevisiae", "asexual", "ambiente húmedo", false, "alcohólica", true);
 
         // R01
-        System.out.println("\n🔹 R01: El jardinero entrega el hongo al micólogo");
+        System.out.println("\n R01: El jardinero entrega el hongo al micólogo");
         jardinero.entregarHongo(seta);
 
         // R02
-        System.out.println("\n🔹 R02: El micólogo estudia el hongo");
+        System.out.println("\n R02: El micólogo estudia el hongo");
         micologo.estudiarHongo(seta);
 
         // R03
-        System.out.println("\n🔹 R03: El micólogo explica la información al jardinero");
+        System.out.println("\n R03: El micólogo explica la información al jardinero");
         micologo.explicarAlJardinero(jardinero, seta);
 
         // R04
-        System.out.println("\n🔹 R04: El jardinero paga por la información");
+        System.out.println("\n R04: El jardinero paga por la información");
         jardinero.pagarInformacion(micologo, "transferencia");
 
         // R05
-        System.out.println("\n🔹 R05: El jardinero cultiva el hongo");
+        System.out.println("\n R05: El jardinero cultiva el hongo");
         jardinero.cultivarHongo(seta);
 
         // Acciones adicionales
-        System.out.println("\n🔹 Acciones adicionales:");
+        System.out.println("\n Acciones adicionales:");
         moho.descomponer();
         levadura.fermentar();
 
-        System.out.println("\n🔹 Información de los hongos:");
+        System.out.println("\n Información de los hongos:");
         seta.mostrarInfo();
         moho.mostrarInfo();
         levadura.mostrarInfo();
