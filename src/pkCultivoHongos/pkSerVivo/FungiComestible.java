@@ -1,10 +1,10 @@
-package pkCultivoHongos.pkHongo;
+package pkCultivoHongos.pkSerVivo;
 
-public class Moho extends Fungi {
+public class FungiComestible extends Hongo {
     private String colorColonia;
     private String superficie;
 
-    public Moho(String nombreCientifico, String tipoReproduccion, String habitat, boolean esToxico, String colorColonia, String superficie) {
+    public FungiComestible(String nombreCientifico, String tipoReproduccion, String habitat, boolean esToxico, String colorColonia, String superficie) {
         super(nombreCientifico, tipoReproduccion, habitat, esToxico);
         this.colorColonia = colorColonia;
         this.superficie = superficie;

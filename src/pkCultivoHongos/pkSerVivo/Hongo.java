@@ -1,13 +1,13 @@
-package pkCultivoHongos.pkHongo;
+package pkCultivoHongos.pkSerVivo;
 
-public abstract class Fungi {
+public abstract class Hongo {
     protected String nombreCientifico;
     protected String tipoReproduccion;
     protected String habitat;
     protected boolean esToxico;
 
     // Constructor
-    public Fungi(String nombreCientifico, String tipoReproduccion, String habitat, boolean esToxico) {
+    public Hongo(String nombreCientifico, String tipoReproduccion, String habitat, boolean esToxico) {
         this.nombreCientifico = nombreCientifico;
         this.tipoReproduccion = tipoReproduccion;
         this.habitat = habitat;

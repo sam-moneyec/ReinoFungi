@@ -1,10 +1,10 @@
-package pkCultivoHongos.pkHongo;
+package pkCultivoHongos.pkSerVivo;
 
-public class HongoSeta extends Fungi {
+public class FungiMedicinal extends Hongo {
     private double tamanoSombrero;
     private String color;
 
-    public HongoSeta(String nombreCientifico, String tipoReproduccion, String habitat, boolean esToxico, double tamanoSombrero, String color) {
+    public FungiMedicinal(String nombreCientifico, String tipoReproduccion, String habitat, boolean esToxico, double tamanoSombrero, String color) {
         super(nombreCientifico, tipoReproduccion, habitat, esToxico);
         this.tamanoSombrero = tamanoSombrero;
         this.color = color;

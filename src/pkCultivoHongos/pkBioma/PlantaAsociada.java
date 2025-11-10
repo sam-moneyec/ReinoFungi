@@ -1,15 +1,15 @@
 package pkCultivoHongos.pkBioma;
 
-import pkCultivoHongos.pkHongo.Fungi;
+import pkCultivoHongos.pkSerVivo.Hongo;
 
 public class PlantaAsociada {
     private String nombrePlanta;
-    private Fungi hongoAsociado;
+    private Hongo hongoAsociado;
     private String tipoRelacion; // simbiótica, parasitaria, mutualista, etc.
     private boolean mejoraCrecimiento;
 
     // Constructor
-    public PlantaAsociada(String nombrePlanta, Fungi hongoAsociado, String tipoRelacion, boolean mejoraCrecimiento) {
+    public PlantaAsociada(String nombrePlanta, Hongo hongoAsociado, String tipoRelacion, boolean mejoraCrecimiento) {
         this.nombrePlanta = nombrePlanta;
         this.hongoAsociado = hongoAsociado;
         this.tipoRelacion = tipoRelacion;
@@ -47,11 +47,11 @@ public class PlantaAsociada {
         this.nombrePlanta = nombrePlanta;
     }
 
-    public Fungi getHongoAsociado() {
+    public Hongo getHongoAsociado() {
         return hongoAsociado;
     }
 
-    public void setHongoAsociado(Fungi hongoAsociado) {
+    public void setHongoAsociado(Hongo hongoAsociado) {
         this.hongoAsociado = hongoAsociado;
     }
 

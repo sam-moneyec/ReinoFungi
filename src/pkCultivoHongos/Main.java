@@ -1,7 +1,6 @@
 package pkCultivoHongos;
-
-import pkCultivoHongos.pkHongo.*;
 import pkCultivoHongos.pkHumano.*;
+import pkCultivoHongos.pkSerVivo.*;
 import pkCultivoHongos.pkBioma.*;
 
 public class Main {
@@ -22,9 +21,9 @@ public class Main {
         micologo.mostrarInfo();
 
         // R03 - Crear diferentes hongos
-        Moho moho = new Moho("Aspergillus niger", "Asexual", "Suelo húmedo", true, "Negro", "Algodonosa");
-        Levadura levadura = new Levadura("Saccharomyces cerevisiae", "Asexual", "Ambientes azucarados", false, "alcohólica", true);
-        HongoSeta seta = new HongoSeta("Agaricus bisporus", "Sexual", "Bosques templados", false, 7.5, "blanca");
+        FungiComestible moho = new FungiComestible("Aspergillus niger", "Asexual", "Suelo húmedo", true, "Negro", "Algodonosa");
+        FungiFernmentador levadura = new FungiFernmentador("Saccharomyces cerevisiae", "Asexual", "Ambientes azucarados", false, "alcohólica", true);
+        FungiMedicinal seta = new FungiMedicinal("Agaricus bisporus", "Sexual", "Bosques templados", false, 7.5, "blanca");
 
         // Mostrar información de los hongos
         moho.mostrarInfo();

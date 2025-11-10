@@ -1,6 +1,6 @@
 package pkCultivoHongos.pkHumano;
 
-import pkCultivoHongos.pkHongo.Fungi;
+import pkCultivoHongos.pkSerVivo.Hongo;
 
 public class Micologo {
     private String nombre;
@@ -15,7 +15,7 @@ public class Micologo {
     }
 
     // Método R02: Estudiar hongo
-    public void estudiarHongo(Fungi hongo) {
+    public void estudiarHongo(Hongo hongo) {
         System.out.println(" El micólogo " + nombre + " está estudiando el hongo: " + hongo.getNombreCientifico());
         
         // Simulamos análisis según toxicidad
@@ -27,7 +27,7 @@ public class Micologo {
     }
 
     // Método R03: Explicar información al jardinero
-    public void explicarAlJardinero(Jardinero jardinero, Fungi hongo) {
+    public void explicarAlJardinero(Jardinero jardinero, Hongo hongo) {
         System.out.println("\n El micólogo " + nombre + " explica al jardinero " + jardinero.getNombre() + ":");
         System.out.println("El hongo " + hongo.getNombreCientifico() + " pertenece al hábitat " + hongo.getHabitat());
         if (hongo.isEsToxico()) {
