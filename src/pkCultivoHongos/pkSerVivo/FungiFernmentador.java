@@ -16,6 +16,8 @@ public class FungiFernmentador extends Hongo {
 
     @Override
     public void mostrarInfo() {
-        System.out.println("Levadura: " + nombreCientifico + " | Fermentación: " + tipoFermentacion + " | Uso alimentario: " + seUsaEnAlimentos);
+        System.out.println("Fungi fermentador: " + nombreCientifico +
+                " | Tipo de fermentación: " + tipoFermentacion +
+                " | Uso alimentario: " + seUsaEnAlimentos);
     }
 }

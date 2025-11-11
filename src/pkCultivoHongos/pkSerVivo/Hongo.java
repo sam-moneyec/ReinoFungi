@@ -1,6 +1,9 @@
 package pkCultivoHongos.pkSerVivo;
 
-public abstract class Hongo {
+// Hongo hereda de SerVivo, ya que todo hongo es un tipo de ser vivo
+public abstract class Hongo extends SerVivo {
+
+    // Atributos comunes de todos los hongos
     protected String nombreCientifico;
     protected String tipoReproduccion;
     protected String habitat;
@@ -14,7 +17,7 @@ public abstract class Hongo {
         this.esToxico = esToxico;
     }
 
-    // Métodos comunes
+    // Métodos getters (acceso controlado a los atributos)
     public String getNombreCientifico() {
         return nombreCientifico;
     }
@@ -31,6 +34,6 @@ public abstract class Hongo {
         return esToxico;
     }
 
-    // Método que deben implementar las subclases
+    // Método abstracto: obliga a las subclases a definir cómo mostrar su información
     public abstract void mostrarInfo();
 }
