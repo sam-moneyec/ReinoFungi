@@ -16,9 +16,12 @@ public class FungiComestible extends Hongo {
 
     @Override
     public void mostrarInfo() {
-        System.out.println("Moho: " + nombreCientifico + " | Color: " + colorColonia + " | Superficie: " + superficie);
+        System.out.println("Fungi comestible: " + nombreCientifico +
+                " | Color: " + colorColonia +
+                " | Superficie: " + superficie);
     }
+
     public void cosechar() {
-        System.out.println("Cosechando el hongo comestible: " + nombreCientifico);
+        System.out.println("Cosechando el fungi comestible: " + nombreCientifico);
     }
 }

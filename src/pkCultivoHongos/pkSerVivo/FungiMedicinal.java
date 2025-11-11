@@ -16,8 +16,11 @@ public class FungiMedicinal extends Hongo {
 
     @Override
     public void mostrarInfo() {
-        System.out.println("Hongo Seta: " + nombreCientifico + " (" + color + "), sombrero de " + tamano+ " cm.");
+        System.out.println("Fungi medicinal: " + nombreCientifico +
+                " | Color: " + color +
+                " | Tamaño del sombrero: " + tamano + " cm");
     }
+
     public void examinarPropiedadesMedicinales() {
         System.out.println(nombreCientifico + " tiene propiedades medicinales beneficiosas para la salud.");
     }
