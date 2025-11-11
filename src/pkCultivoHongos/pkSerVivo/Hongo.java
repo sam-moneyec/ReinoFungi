@@ -1,15 +1,12 @@
 package pkCultivoHongos.pkSerVivo;
 
-// Hongo hereda de SerVivo, ya que todo hongo es un tipo de ser vivo
 public abstract class Hongo extends SerVivo {
-
-    // Atributos comunes de todos los hongos
     protected String nombreCientifico;
     protected String tipoReproduccion;
     protected String habitat;
     protected boolean esToxico;
 
-    // Constructor
+    // Constructor existente
     public Hongo(String nombreCientifico, String tipoReproduccion, String habitat, boolean esToxico) {
         this.nombreCientifico = nombreCientifico;
         this.tipoReproduccion = tipoReproduccion;
@@ -17,23 +14,23 @@ public abstract class Hongo extends SerVivo {
         this.esToxico = esToxico;
     }
 
-    // Métodos getters (acceso controlado a los atributos)
-    public String getNombreCientifico() {
+    // Getters existentes...
+    public String getNombreCientifico() { return nombreCientifico; }
+    public String getTipoReproduccion() { return tipoReproduccion; }
+    public String getHabitat() { return habitat; }
+    public boolean isEsToxico() { return esToxico; }
+
+    // ---- NUEVOS MÉTODOS ----
+    // Conveniencia: nombre general para impresión (puedes cambiar a nombreComun si lo agregas)
+    public String getNombre() {
         return nombreCientifico;
     }
 
-    public String getTipoReproduccion() {
-        return tipoReproduccion;
+    // Conveniencia: ¿apto para consumo?
+    public boolean esAptoParaConsumo() {
+        return !esToxico;
     }
 
-    public String getHabitat() {
-        return habitat;
-    }
-
-    public boolean isEsToxico() {
-        return esToxico;
-    }
-
-    // Método abstracto: obliga a las subclases a definir cómo mostrar su información
+    // Método abstracto que ya tenías
     public abstract void mostrarInfo();
 }
