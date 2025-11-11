@@ -21,7 +21,7 @@ public class Main {
         FungiComestible fungi = new FungiComestible("Agaricus bisporus", "blanco", "lisa", false);
         Jardinero jardinero = new Jardinero("0101", "Carlos", "Perez", 35, 5);
         Micologo micologo = new Micologo("0202", "Ana", "Lopez", 40, "anaL", "micros3c", "micorrizas");
-
+      
         AppLaboratorioFungi lab = new AppLaboratorioFungi("1.0", "LabFungi");
         lab.iniciarLaboratorio();
 

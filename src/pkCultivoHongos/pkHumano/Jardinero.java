@@ -6,13 +6,32 @@ import pkCultivoHongos.pkBioma.Terreno;
 public class Jardinero {
     private String cedula;
     private String nombre;
+    private String apellido;
+    private int edad;
+    private int experiencia;
 
     public Jardinero(String cedula, String nombre, String apellido, int edad, int experiencia) {
         this.cedula = cedula;
         this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.experiencia = experiencia;
+    }
+    public String getNombre() { 
+        return nombre;
+     }
+
+    public String getApellido() {
+        return apellido;
     }
 
-    public String getNombre() { return nombre; }
+    public int getEdad() {
+        return edad;
+    }
+
+    public int getExperiencia() {
+        return experiencia;
+    }
 
     // Validar si puede usar el sistema
     public boolean validarCedula() {

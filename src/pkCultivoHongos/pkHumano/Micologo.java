@@ -18,7 +18,9 @@ public class Micologo {
         this.especialidad = especialidad;
     }
 
-    public String getNombre() { return nombre; }
+    public String getNombre() { 
+        return nombre; 
+    }
 
     public void mostrarInfo() {
         System.out.println("Micólogo: " + nombre + " " + apellido + " | Cédula: " + cedula + " | Especialidad: " + especialidad);
