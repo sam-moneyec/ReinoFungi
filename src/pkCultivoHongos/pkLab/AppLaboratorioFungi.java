@@ -1,74 +1,41 @@
 package pkCultivoHongos.pkLab;
 
-import pkCultivoHongos.pkHumano.Micologo;
-import pkCultivoHongos.pkSerVivo.Hongo;
 import pkCultivoHongos.pkBioma.Terreno;
+import pkCultivoHongos.pkSerVivo.Hongo;
+import java.util.HashMap;
 
-/**
- * Clase que representa el laboratorio y coordina pruebas.
- */
 public class AppLaboratorioFungi {
+    private String version;
+    private String nombreSistema;
 
-    private final Datastore datastore;
-    private Micologo currentMicologo;
-
-    public AppLaboratorioFungi(Datastore datastore) {
-        this.datastore = datastore;
+    public AppLaboratorioFungi(String version, String nombreSistema) {
+        this.version = version;
+        this.nombreSistema = nombreSistema;
     }
 
     public void iniciarLaboratorio() {
-        System.out.println(" Laboratorio de Fungi iniciado.");
+        System.out.println("Laboratorio " + nombreSistema + " (v" + version + ") iniciado.");
     }
 
-    /**
-     * Simula el ingreso del micólogo al laboratorio.
-     * En esta versión simple solo valida que no sea null.
-     */
-    public boolean ingresar(Micologo micologo) {
-        if (micologo == null) {
-            System.out.println("Error: micólogo inválido.");
-            return false;
-        }
-        this.currentMicologo = micologo;
-        System.out.println("Micólogo ingresado al laboratorio: " + micologo.getNombre());
-        return true;
+    // Caso de uso 4: ajustar ambiente
+    public void ajustarAmbiente(Terreno terreno, Hongo hongo) {
+        System.out.println("\nSistema " + nombreSistema + " ejecutando automatización...");
+        System.out.println("- Ajustando temperatura y humedad del terreno " + terreno.getTipoSuelo() + "...");
+        System.out.println("- Monitoreando crecimiento del hongo " + hongo.getNombre() + "...");
+        System.out.println("- Finalizado: ambiente optimizado.");
     }
 
-    /**
-     * Estudia el hongo (delegando al micólogo), determina resultado y guarda en datastore.
-     * Devuelve true si se registró correctamente.
-     */
-    public boolean registrarResultado(Hongo hongo, Terreno terreno) {
-        if (currentMicologo == null) {
-            System.out.println("No hay micólogo activo en el laboratorio.");
-            return false;
-        }
-        if (hongo == null) {
-            System.out.println("No se recibió hongo para estudiar.");
-            return false;
-        }
-
-        // 1) El micólogo realiza el estudio (usar método ya definido en Micologo)
-        currentMicologo.estudiarHongo(hongo);
-
-        // 2) El micólogo puede describir el bioma (si implementaste describirBioma)
-        try {
-            currentMicologo.describirBioma(hongo, terreno); // si no existe, ignora con cast
-        } catch (NoSuchMethodError | Exception e) {
-            // método no implementado: omitir
-        }
-
-        // 3) Determinar resultado simple
-        String resultado = hongo.isEsToxico() ? "TÓXICO - no apto para consumo" : "NO TÓXICO - apto para consumo";
-
-        // 4) Guardar en datastore
-        datastore.saveResult(hongo.getNombreCientifico(), resultado, currentMicologo.getNombre());
-
-        System.out.println("Resultado registrado: " + resultado);
-        return true;
+    // Método para guardar muestras
+    public void guardarMuestra(String id, String registro) {
+        System.out.println("Guardando muestra con id " + id + ": " + registro);
     }
 
-    public Datastore getDatastore() {
-        return datastore;
+    // Método para automatizar cultivo
+    public void automatizarCultivo(Hongo hongo, Terreno terreno, HashMap<String, Double> parametros) {
+        System.out.println("\nAutomatizando cultivo del hongo " + hongo.getNombre() + "...");
+        System.out.println("- Ajustando humedad: " + parametros.get("humedad"));
+        System.out.println("- Ajustando temperatura: " + parametros.get("temperatura"));
+        System.out.println("- Monitoreando crecimiento...");
+        System.out.println("- Cultivo automatizado finalizado.");
     }
 }

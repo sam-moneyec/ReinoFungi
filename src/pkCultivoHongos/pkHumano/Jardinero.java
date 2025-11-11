@@ -1,86 +1,45 @@
 package pkCultivoHongos.pkHumano;
 
-import java.util.Scanner;
+import pkCultivoHongos.pkSerVivo.Hongo;
+import pkCultivoHongos.pkBioma.Terreno;
 
-/**
- * Clase que representa al Jardinero dentro del ecosistema del Reino Fungi.
- * Su función es cuidar las plantas y mantener condiciones adecuadas para el cultivo.
- * Además, puede recibir consejos o indicaciones del micólogo.
- */
 public class Jardinero {
-
-    // ======== Atributo ========
+    private String cedula;
     private String nombre;
 
-    // ======== Constructores ========
-
-    // Constructor por defecto (usado en el flujo principal del sistema)
-    public Jardinero() {
-        this.nombre = "Juan";
-    }
-
-    // Constructor alternativo (permite asignar nombre personalizado)
-    public Jardinero(String nombre) {
+    public Jardinero(String cedula, String nombre, String apellido, int edad, int experiencia) {
+        this.cedula = cedula;
         this.nombre = nombre;
     }
 
-    // ======== Getter ========
+    public String getNombre() { return nombre; }
 
-    public String getNombre() {
-        return nombre;
+    // Validar si puede usar el sistema
+    public boolean validarCedula() {
+        return cedula != null && !cedula.isEmpty();
     }
 
-    // ======== Nuevo método ========
-
-    /**
-     * Recibe un consejo o explicación del micólogo.
-     * Este método refuerza la colaboración entre ambos actores.
-     */
-    public void recibirConsejo(String mensaje) {
-        System.out.println(" El jardinero " + nombre + " escucha: \"" + mensaje + "\"");
+    // Caso de uso 1: registrar muestra
+    public String registrarMuestra(Hongo hongo, Terreno terreno) {
+        String registro = String.format("Muestra -> Hongo: %s | Terreno: %s | Jardinero: %s",
+                hongo.getNombre(), terreno.getTipoSuelo(), nombre);
+        System.out.println("\n Muestra registrada:\n  - Hongo: " + hongo.getNombre() +
+                           "\n  - Terreno: " + terreno.getTipoSuelo() +
+                           "\n  - Jardinero: " + nombre);
+        return registro;
     }
 
-    // ======== Modo interactivo ========
-
-    /**
-     * Simula una sesión interactiva de cuidado de plantas.
-     * Este método puede ejecutarse de forma independiente para probar al Jardinero.
-     */
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println(" Hola, Soy el Jardinero. Vamos a cuidar las plantas hoy.");
-        System.out.print("¿Qué planta vas a cuidar? ");
-        String planta = sc.nextLine();
-
-        System.out.print("¿Qué tipo de suelo tiene la planta (arenoso, arcilloso, negro, etc.)? ");
-        String tipoDeSuelo = sc.nextLine();
-
-        System.out.print("¿Cuánta agua necesita al día (poca, moderada, mucha)? ");
-        String cantidadAgua = sc.nextLine();
-
-        System.out.print("¿La temperatura del ambiente es fría, templada o cálida? ");
-        String temperatura = sc.nextLine();
-
-        if (temperatura.equalsIgnoreCase("fría")) {
-            System.out.println(" Recuerda que las plantas crecen más lento en el frío. Protégelas del viento.");
-        } else if (temperatura.equalsIgnoreCase("cálida")) {
-            System.out.println(" El calor es bueno, pero asegúrate de que la planta no se seque.");
-        } else {
-            System.out.println(" Temperatura ideal para el crecimiento.");
+    // Caso de uso 2: cultivar hongo
+    public void cultivar(Hongo hongo, Terreno terreno, int dias) {
+        System.out.printf("\nCultivando %s por %d días en terreno %s...\n", hongo.getNombre(), dias, terreno.getTipoSuelo());
+        if (dias >= 1) {
+            System.out.println("➡ El hongo muestra crecimiento visible.");
         }
+    }
 
-        System.out.print("¿Durante cuántos días cuidarás la planta? ");
-        int diasDeCuidado = sc.nextInt();
-
-        for (int i = 1; i <= diasDeCuidado; i++) {
-            System.out.println("\n Día " + i + ":");
-            System.out.println("- Riega la planta con cantidad " + cantidadAgua + ".");
-            System.out.println("- Revisa que el suelo " + tipoDeSuelo + " no esté seco.");
-            System.out.println("- Observa el crecimiento de la planta " + planta + ".");
-        }
-
-        System.out.println("\n ¡Excelente trabajo! La planta " + planta + " ha crecido saludable gracias a tus cuidados.");
-        sc.close();
+    // Medir crecimiento
+    public double medirCrecimiento(Hongo hongo) {
+        System.out.println("Midiendo crecimiento de: " + hongo.getNombre());
+        return 50.0; // ejemplo
     }
 }
