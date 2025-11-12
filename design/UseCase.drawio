@@ -1,13 +1,13 @@
 <mxfile host="65bd71144e">
     <diagram id="X1wWvfNBlFn4xuoGE9zG" name="Page-1">
-        <mxGraphModel dx="3224" dy="3276" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2487" dy="2799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="165" y="128" width="50" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="ReinoFungi" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;fillColor=#E6E6E6;fontColor=light-dark(#000000,#EDEDED);" parent="1" vertex="1">
+                <mxCell id="3" value="pkCultivoHongo" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;fillColor=#E6E6E6;fontColor=light-dark(#000000,#EDEDED);" parent="1" vertex="1">
                     <mxGeometry x="-1370" y="-1890" width="1280" height="1080" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="Registrar muestra detallando el nombre científico del hongo, el tipo de terreno y el nombre del jardinero." style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" parent="3" vertex="1">
@@ -22,34 +22,34 @@
                 <mxCell id="9" value="Automatizar cultivo de acuerdo al hongo ajustando la humedad, temperatura, monitoreando su crecimiento y verificando que la automatización sea la adecuada." style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" parent="3" vertex="1">
                     <mxGeometry x="479" y="890" width="357.5" height="168" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="3" target="4" edge="1" source="8">
+                <mxCell id="17" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="3" source="8" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="992" y="160" as="sourcePoint"/>
                         <mxPoint x="882" y="204" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="42" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="3" source="4" target="6">
+                <mxCell id="42" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="3" source="4" target="6" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-150" y="237" as="sourcePoint"/>
                         <mxPoint x="491" y="390" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="44" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="3" source="6" target="47">
+                <mxCell id="44" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="3" source="6" target="47" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-190" y="226" as="sourcePoint"/>
                         <mxPoint x="655.1710268557872" y="550.0019589601627" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="45" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="3" source="47" target="9">
+                <mxCell id="45" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="3" source="47" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="654" y="727.9999999999998" as="sourcePoint"/>
                         <mxPoint x="481" y="914" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="47" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Analizar muestra del hongo cultivado para determinar si el hongo es tóxico o no y ver si es apto para el consumo.&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" vertex="1" parent="3">
+                <mxCell id="47" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Analizar muestra del hongo cultivado para determinar si el hongo es tóxico o no y ver si es apto para el consumo.&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" parent="3" vertex="1">
                     <mxGeometry x="479.75" y="590" width="353" height="178" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="4" edge="1" source="32">
+                <mxCell id="18" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="32" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-1550" y="-1460" as="sourcePoint"/>
                     </mxGeometry>
@@ -60,16 +60,16 @@
                 <mxCell id="26" value="JARDINERO" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFCC99;" parent="1" vertex="1">
                     <mxGeometry x="-1610" y="-1250" width="100" height="220" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" value="MICÓLOGO" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFCC99;" vertex="1" parent="1">
+                <mxCell id="32" value="MICÓLOGO" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFCC99;" parent="1" vertex="1">
                     <mxGeometry x="-1610" y="-1740" width="100" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="41" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="26" target="9">
+                <mxCell id="41" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="26" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-1500" y="-1122" as="sourcePoint"/>
                         <mxPoint x="-879.4389999999999" y="-1214.866" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="46" style="edgeStyle=none;html=1;entryX=0.939;entryY=0.649;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="19" target="4">
+                <mxCell id="46" style="edgeStyle=none;html=1;entryX=0.939;entryY=0.649;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="19" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="50" y="-1338" as="sourcePoint"/>
                         <mxPoint x="-485" y="-883" as="targetPoint"/>
