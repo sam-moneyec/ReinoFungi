@@ -16,7 +16,7 @@ public class Reishi extends Hongo {
 
     @Override
     public void mostrarInfo() {
-        System.out.println("Fungi medicinal: " + nombreCientifico +
+        System.out.println(" - Reishi(hongoMedicinal): " + nombreCientifico +
                 " | Color: " + color +
                 " | Tamaño del sombrero: " + tamano + " cm");
     }

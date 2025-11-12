@@ -15,19 +15,20 @@ public class Controller {
         Jardinero jardinero = new Jardinero("1724238431", "Carlos", "Perez", 35, 5);
         Micologo micologo = new Micologo("0504293321", "Ana", "Lopez", 40, "anaL", "micros3c", "micorrizas");
         AppLaboratorioFungi lab = new AppLaboratorioFungi("1.0", "LabFungi");
-        Levadura levadura = new Levadura("Saccharomyces cerevisiae", "asexual", "selva", false,"fermentativa", true);
+        Levadura levadura = new Levadura("Saccharomyces cerevisiae", "asexual", "selva", false,"alcohólica", true);
         Reishi reishi = new Reishi("Ganoderma lucidum", "asexual", "rugosa", false, 10, "rojo brillante");
     //Registrar muestra
     public void registrarMuestra(){
-        System.out.println("==========================================");
+        System.out.println("==========================================================");
         System.out.println("    Escuela Politécnica Nacional");
-        System.out.println("    Integrantes: Robayo Morcillo Samuel Esteban\n                 Mao Tsetung Rosero Duran,\n                 Ariel Alejandro Soria Yánez");
+        System.out.println("    Integrantes: Robayo Morcillo Samuel Esteban\n                 Mao Tsetung Rosero Duran\n                 Ariel Alejandro Soria Yánez");
         System.out.println("    Proyecto: Reino Fungi");
         System.out.println("    Caso de uso: Gestión del cultivo basado en hongos");
-        System.out.println("==========================================\n");
-        System.out.println(" Jardinero se presenta:");
+        System.out.println("==========================================================\n");
+        System.out.println("INICIO DE SIMULACIÓN\n\n");
+        System.out.println("Jardinero se presenta:");
         jardinero.presentarse();
-        System.out.println(" Micólogo se presenta:");
+        System.out.println("Micólogo se presenta:");
         micologo.presentarse();
         System.out.println("Tipos de Hongos");
         fungi.mostrarInfo();
@@ -58,7 +59,8 @@ public class Controller {
     }
     //AnalizarMuestra
     public void analizarMuestra(){
-        System.out.println("\n Automatizar cultivo");
+        System.out.println("\n El micólogo está entregando los resultados de cultivo la jardinero para la automatización del cultivo de hongos\n");
+        System.out.println("\n El jardinero está automatizando el cultivo de acuerdo a resultados del laboratorio (tipo de hongo: " + fungi.getNombre() + ")\n");
         HashMap<String, Double> parametros = new HashMap<>();
         parametros.put("humedad", 85.0);
         parametros.put("temperatura", 23.0);
@@ -68,6 +70,10 @@ public class Controller {
     //AutomatizarCultivo
     public void automatizarCultivo(){
   micologo.describirBioma(fungi, terreno);
+    System.out.println("""
+El hongo está creciendo en un bioma adecuado gracias al estudio del micólogo.
+
+SIMULACIÓN FINALIZADA""");
     }
     
     

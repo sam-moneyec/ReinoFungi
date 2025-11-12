@@ -16,7 +16,7 @@ public class Levadura extends Hongo {
 
     @Override
     public void mostrarInfo() {
-        System.out.println("Fungi fermentador: " + nombreCientifico +
+        System.out.println(" - Levadura(hongoFermentador): " + nombreCientifico +
                 " | Tipo de fermentación: " + tipoFermentacion +
                 " | Uso alimentario: " + seUsaEnAlimentos);
     }

@@ -18,7 +18,7 @@ public class Jardinero {
         this.experiencia = experiencia;
     }
     public void presentarse() {
-        System.out.println("Jardinero: " + nombre + " " + apellido + " | Cédula: " + cedula +" | Edad: " + edad + " | Experiencia: " + experiencia + " años");
+        System.out.println(" - Jardinero: " + nombre + " " + apellido + " | Cédula: " + cedula +" | Edad: " + edad + " | Experiencia: " + experiencia + " años");
     }
     public String getNombre() { 
         return nombre;
@@ -55,7 +55,7 @@ public class Jardinero {
     public void cultivar(Hongo hongo, Terreno terreno, int dias) {
         System.out.printf("\nCultivando %s por %d días en terreno %s...\n", hongo.getNombre(), dias, terreno.getTipoSuelo());
         if (dias >= 1) {
-            System.out.println("➡ El hongo muestra crecimiento visible.");
+            System.out.println("El hongo muestra crecimiento visible.");
         }
     }
 

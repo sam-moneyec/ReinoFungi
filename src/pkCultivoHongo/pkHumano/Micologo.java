@@ -18,19 +18,19 @@ public class Micologo {
         this.especialidad = especialidad;
     }
 public void presentarse() {
-        System.out.println("Micólogo: " + nombre + " " + apellido + " | Cédula: " + cedula + " | Especialidad: " + especialidad);
+        System.out.println(" - Micólogo: " + nombre + " " + apellido + " | Cédula: " + cedula + " | Especialidad: " + especialidad +"\n");
     }
     public String getNombre() { 
         return nombre; 
     }
 
     public void mostrarInfo() {
-        System.out.println("Micólogo: " + nombre + " " + apellido + " | Cédula: " + cedula + " | Especialidad: " + especialidad);
+        System.out.println(" - Micólogo: " + nombre + " " + apellido + " | Cédula: " + cedula + " | Especialidad: " + especialidad + "\n");
     }
 
     // Analizar una muestra de hongo y devolver observación
     public String analizarMuestra(Hongo hongo) {
-        System.out.println("\n🔬 Analizando muestra de hongo: " + hongo.getNombre());
+        System.out.println("\nAnalizando muestra de hongo: " + hongo.getNombre());
         String observacion = hongo.isEsToxico()
             ? "Observación: Hongo TÓXICO - no apto para consumo."
             : "Observación: Hongo NO TÓXICO - apto para consumo.";

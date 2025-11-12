@@ -21,7 +21,7 @@ public class Champinion extends Hongo {
 
     @Override
     public void mostrarInfo() {
-        System.out.println("Champinion: " + nombreCientifico + " | Color: " + color + " | Superficie: " + superficie);
+        System.out.println(" - Champinion: " + nombreCientifico + " | Color: " + color + " | Superficie: " + superficie);
     }
 
     public void cosechar() {
