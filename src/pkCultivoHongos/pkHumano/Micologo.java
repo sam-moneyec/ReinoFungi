@@ -1,7 +1,7 @@
 package pkCultivoHongos.pkHumano;
 
 import pkCultivoHongos.pkSerVivo.Hongo;
-import pkCultivoHongos.pkSerVivo.FungiComestible;
+import pkCultivoHongos.pkSerVivo.Champinion;
 import pkCultivoHongos.pkBioma.Terreno;
 import pkCultivoHongos.pkLab.AppLaboratorioFungi;
 
@@ -43,7 +43,7 @@ public class Micologo {
         // Aquí podrías invocar métodos reales del laboratorio para guardar resultados
     }
 
-    public void describirBioma(FungiComestible hongo, Terreno terreno) {
+    public void describirBioma(Champinion hongo, Terreno terreno) {
         System.out.println("\nEl hongo " + hongo.getNombre() + " se encuentra en un bioma con las siguientes características:");
         terreno.mostrarDatos();
     }

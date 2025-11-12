@@ -1,123 +1,78 @@
 <mxfile host="65bd71144e">
     <diagram id="X1wWvfNBlFn4xuoGE9zG" name="Page-1">
-        <mxGraphModel dx="3707" dy="3142" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="3224" dy="3276" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="165" y="128" width="50" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="ReinoFungi" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;fillColor=#E6E6E6;fontColor=light-dark(#000000,#EDEDED);" vertex="1" parent="1">
-                    <mxGeometry x="-1350" y="-1840" width="1280" height="1820" as="geometry"/>
+                <mxCell id="3" value="ReinoFungi" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;recursiveResize=0;whiteSpace=wrap;fillColor=#E6E6E6;fontColor=light-dark(#000000,#EDEDED);" parent="1" vertex="1">
+                    <mxGeometry x="-1370" y="-1890" width="1280" height="1080" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Crear terreno&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" vertex="1" parent="3">
-                    <mxGeometry x="480" y="114" width="335" height="146" as="geometry"/>
+                <mxCell id="4" value="Registrar muestra detallando el nombre científico del hongo, el tipo de terreno y el nombre del jardinero." style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" parent="3" vertex="1">
+                    <mxGeometry x="488.75" y="49" width="335" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="Registrar miciólogo" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" vertex="1" parent="3">
-                    <mxGeometry x="510" y="312" width="310" height="128" as="geometry"/>
+                <mxCell id="6" value="Cultivar hongo después de esperar un período de tiempo óptimo para la especie y registrar los avances o progresos dentro del crecimiento del hongo.&lt;span style=&quot;scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;br style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" parent="3" vertex="1">
+                    <mxGeometry x="481.25" y="300" width="350" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="Crear hongo" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" vertex="1" parent="3">
-                    <mxGeometry x="560" y="507" width="300" height="148" as="geometry"/>
+                <mxCell id="8" value="Guardar muestra asignando una ID a cada hongo que se le realizó un análisis de cualidades" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0FFE4;" parent="3" vertex="1">
+                    <mxGeometry x="1010" y="60" width="220" height="138" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="Comparar sus características con su bioma correspondiente" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0FFE4;" vertex="1" parent="3">
-                    <mxGeometry x="930" y="663" width="260" height="112" as="geometry"/>
+                <mxCell id="9" value="Automatizar cultivo de acuerdo al hongo ajustando la humedad, temperatura, monitoreando su crecimiento y verificando que la automatización sea la adecuada." style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" parent="3" vertex="1">
+                    <mxGeometry x="479" y="890" width="357.5" height="168" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Especificarr condiciones ambientales para el estudio" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0FFE4;" vertex="1" parent="3">
-                    <mxGeometry x="990" y="92" width="220" height="138" as="geometry"/>
-                </mxCell>
-                <mxCell id="9" value="Generar interacción&amp;nbsp;&lt;div&gt;Planta - Hongo&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" vertex="1" parent="3">
-                    <mxGeometry x="540" y="732" width="290" height="168" as="geometry"/>
-                </mxCell>
-                <mxCell id="10" value="Estudiar características del Hongo" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" vertex="1" parent="3">
-                    <mxGeometry x="535" y="1110" width="260" height="112" as="geometry"/>
-                </mxCell>
-                <mxCell id="11" value="Determinar un resultado&amp;nbsp; de estudio" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" vertex="1" parent="3">
-                    <mxGeometry x="540" y="1250" width="260" height="112" as="geometry"/>
-                </mxCell>
-                <mxCell id="12" value="Compartir resultado con el jardinero" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" vertex="1" parent="3">
-                    <mxGeometry x="540" y="1440" width="260" height="112" as="geometry"/>
-                </mxCell>
-                <mxCell id="13" value="Incluir nombre científico y&lt;div&gt;&amp;nbsp;características físicas&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E0FFE4;" vertex="1" parent="3">
-                    <mxGeometry x="960" y="442" width="260" height="112" as="geometry"/>
-                </mxCell>
-                <mxCell id="14" value="Requerir informacion del hongo para su consumo y/o venta" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" vertex="1" parent="3">
-                    <mxGeometry x="530" y="940" width="260" height="112" as="geometry"/>
-                </mxCell>
-                <mxCell id="15" value="Recibir información sobre el consumo&amp;nbsp;&lt;div&gt;del hongo&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" vertex="1" parent="3">
-                    <mxGeometry x="540" y="1610" width="260" height="112" as="geometry"/>
-                </mxCell>
-                <mxCell id="16" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.99;entryY=0.382;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="3" target="6">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="967" y="520" as="sourcePoint"/>
-                        <mxPoint x="906.0000000000005" y="-90" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="17" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="3" target="4">
+                <mxCell id="17" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="3" target="4" edge="1" source="8">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="992" y="160" as="sourcePoint"/>
                         <mxPoint x="882" y="204" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="18" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="4">
+                <mxCell id="42" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="3" source="4" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-150" y="237" as="sourcePoint"/>
+                        <mxPoint x="491" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="3" source="6" target="47">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-190" y="226" as="sourcePoint"/>
+                        <mxPoint x="655.1710268557872" y="550.0019589601627" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="3" source="47" target="9">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="654" y="727.9999999999998" as="sourcePoint"/>
+                        <mxPoint x="481" y="914" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Analizar muestra del hongo cultivado para determinar si el hongo es tóxico o no y ver si es apto para el consumo.&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFC4F6;" vertex="1" parent="3">
+                    <mxGeometry x="479.75" y="590" width="353" height="178" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="4" edge="1" source="32">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="-1550" y="-1460" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="19" value="AppLaboratorioFungi (sistema)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFCC99;" vertex="1" parent="1">
-                    <mxGeometry x="-1620" y="-1560" width="80" height="220" as="geometry"/>
+                <mxCell id="19" value="AppLaboratorioFungi (sistema)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFCC99;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="-1500" width="100" height="220" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="21" target="14">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="26" value="JARDINERO" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFCC99;" parent="1" vertex="1">
+                    <mxGeometry x="-1610" y="-1250" width="100" height="220" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="Jardinero" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFCC99;" vertex="1" parent="1">
-                    <mxGeometry x="-30" y="-760" width="100" height="220" as="geometry"/>
+                <mxCell id="32" value="MICÓLOGO" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFCC99;" vertex="1" parent="1">
+                    <mxGeometry x="-1610" y="-1740" width="100" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="23" target="10">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="23" value="Miciólogo" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFCC99;" vertex="1" parent="1">
-                    <mxGeometry x="-1630" y="-880" width="90" height="240" as="geometry"/>
-                </mxCell>
-                <mxCell id="24" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="5">
+                <mxCell id="41" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="26" target="9">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-1540" y="-1450" as="sourcePoint"/>
-                        <mxPoint x="-860" y="-1643" as="targetPoint"/>
+                        <mxPoint x="-1500" y="-1122" as="sourcePoint"/>
+                        <mxPoint x="-879.4389999999999" y="-1214.866" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="25" style="edgeStyle=none;html=1;" edge="1" parent="1" source="26" target="6">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="26" value="Terreno/Bioma" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFCC99;" vertex="1" parent="1">
-                    <mxGeometry x="-1580" y="-1240" width="100" height="220" as="geometry"/>
-                </mxCell>
-                <mxCell id="27" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="9">
+                <mxCell id="46" style="edgeStyle=none;html=1;entryX=0.939;entryY=0.649;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="19" target="4">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-1470" y="-1130" as="sourcePoint"/>
-                        <mxPoint x="-774" y="-1229" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="28" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="11">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-1530" y="-745" as="sourcePoint"/>
-                        <mxPoint x="-805" y="-664" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="29" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="12">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-1520" y="-735" as="sourcePoint"/>
-                        <mxPoint x="-800" y="-524" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="30" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="15">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-20" y="-657" as="sourcePoint"/>
-                        <mxPoint x="-550" y="-834" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="31" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.99;entryY=0.382;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.132;exitY=0.312;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="7">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-373" y="-1310" as="sourcePoint"/>
-                        <mxPoint x="-483" y="-1266" as="targetPoint"/>
+                        <mxPoint x="50" y="-1338" as="sourcePoint"/>
+                        <mxPoint x="-485" y="-883" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>

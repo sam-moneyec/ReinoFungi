@@ -1,10 +1,10 @@
 package pkCultivoHongos.pkSerVivo;
 
-public class FungiFermentador extends Hongo {
+public class Levadura extends Hongo {
     private String tipoFermentacion;
     private boolean seUsaEnAlimentos;
 
-    public FungiFermentador(String nombreCientifico, String tipoReproduccion, String habitat, boolean esToxico, String tipoFermentacion, boolean seUsaEnAlimentos) {
+    public Levadura(String nombreCientifico, String tipoReproduccion, String habitat, boolean esToxico, String tipoFermentacion, boolean seUsaEnAlimentos) {
         super(nombreCientifico, tipoReproduccion, habitat, esToxico);
         this.tipoFermentacion = tipoFermentacion;
         this.seUsaEnAlimentos = seUsaEnAlimentos;
