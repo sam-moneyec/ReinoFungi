@@ -27,7 +27,7 @@ public abstract class Hongo extends SerVivo {
     }
 
     // Conveniencia: ¿apto para consumo?
-    public boolean esAptoParaConsumo() {
+    public boolean poderConsumo() {
         return !esToxico;
     }
 
